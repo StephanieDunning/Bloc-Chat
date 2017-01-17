@@ -1,0 +1,13 @@
+<main>
+<div>
+    <h1>Create new chat room</h1>
+</div>
+    <form>
+        <input type="text" ng-model="newRoom.name">
+        <button type="button" ng-click="createNewRoom()">Create Room</button>
+        <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+        <p>{{newRoom.name}}</p><br>
+    </form>
+</main>
+
+
