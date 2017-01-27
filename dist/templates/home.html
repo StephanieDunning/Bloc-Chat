@@ -1,6 +1,18 @@
-<nav class="navbar">
-    <h1>Bloc Chat</h1>
-    <p ng-repeat="room in home.rooms">
-        {{ room.name }}
-    </p>
-</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar">
+                <h1>Bloc Chat</h1>
+            </nav>
+        </div>
+    </div>
+    <div class="col-md-2">
+            <button class="btn btn-primary" ng-click="home.newRoom()">New Room</button>
+            <p ng-repeat="room in home.rooms">
+                {{ room.name }}
+            </p>
+    </div>       
+    <div class="col-md-10">
+            Body content
+    </div>
+</div>
