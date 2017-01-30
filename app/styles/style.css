@@ -13,17 +13,18 @@ body {
     
 }
 
+#left {
+     background-color: darkgray;
+}
+
 .container {
     text-align: left;
-    font-family: sans-serif
-    font-size: 25%;
-    width: 40%;
+    font-family: sans-serif;
+    font-size: 1.25em;
     padding: 5px;
-    background-color: darkgray;
-    float: left;
     box-sizing: border-box;
     border-color: black;
-    margin-left: 10px;
+/*    margin-left: 10px;*/
 }
 
 .btn-primary {
@@ -42,4 +43,8 @@ body {
 
 .modal-footer {
     background-color: whitesmoke;
+}
+
+.col-md-10 {
+   text-align: right; 
 }
