@@ -32,6 +32,11 @@ body {
     margin-bottom: 10px;
 }
 
+.btn-warning {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 .modal-header {
     background-color: whitesmoke;
     color: black;
