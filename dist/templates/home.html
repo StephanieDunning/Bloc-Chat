@@ -15,8 +15,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="right-side">
             <p ng-repeat="message in home.messages">{{ message.content }}</p>
+            <input type="text" ng-model="home.newMessage" /><button class="btn btn-primary" ng-click="home.sendMessage()" ng-disabled="!home.currentRoom">Send Message</button>
         </div>
     </div>
 </div>

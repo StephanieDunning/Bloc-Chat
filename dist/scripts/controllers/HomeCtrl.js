@@ -3,6 +3,8 @@
         this.rooms = Room.all;
         this.currentRoom = null;
         this.messages = null;
+        this.newMessage = null;
+
 //        this.user = $cookies.get('currentUser');
         
         this.newRoom = function() {            
@@ -18,6 +20,12 @@
             this.currentRoom = room;
             this.messages = Message.getByRoomId(room.$id);
         }
+        
+        this.sendMessage = function() {
+            Message.send(this.newMessage, this.currentRoom.$id);
+            this.newMessage = null;
+        }
+        
     }
  
     angular
